@@ -13,16 +13,31 @@ header{
   align-items: center;
   margin-bottom: 25px;
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:75%
+}
+aside{
+  width:25%;
+  line-height: 2.0;
+}
+
 .attention {
   color: rgb(255, 0, 0);
   font-weight: bold;
-  padding: 5px;
-  margin: 10px;
   font-size: 23px
 }
 
-.section1 {
-  border: 5px solid rgb(255, 255, 255);
+.section {
+  border: 3px solid rgb(255, 255, 255);
   color: rgb(255, 255, 255);
   padding: 20px;
   margin-bottom: 20px;
@@ -30,7 +45,7 @@ header{
 
 .index{
   color: rgb(255, 255, 255);
-  margin-right: 680px;
+  margin-bottom: 10px;
 }
 
 #html-css-deco-example{
@@ -41,4 +56,11 @@ header{
   color: rgb(0,255,0);
   display: flex;
   justify-content: center;
+}
+
+.section3{
+  border: 5px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-bottom: 20px;
 }
