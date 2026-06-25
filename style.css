@@ -65,9 +65,8 @@ aside{
   justify-content: center;
 }
 
-.section3{
-  border: 5px solid rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-  padding: 20px;
-  margin-bottom: 20px;
+#img002{
+  display: block;
+  margin: 0 auto;
+  width: 70%;
 }
