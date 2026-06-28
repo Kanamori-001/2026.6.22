@@ -20,6 +20,37 @@ header{
   align-items: center;
   margin-bottom: 25px;
 }
+
+#page-top {
+  position: fixed;
+  bottom: 5%;
+  left: 3%;
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: rgb(47, 136, 163);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.3s, z-index: 9999;
+}
+
+#page-top.hide{
+  opacity:0;
+  pointer-events:none;
+  transform: translateY(30px);
+}
+
+#page-top.show{
+  opacity:1;
+  pointer-events:auto;
+  transform: translateY(0);
+}
+
+#page-top:hover{
+  background-color: rgb(245, 255, 110);
+  color:rgb(100,100,255);
+}
 .container {
   display: flex;
   justify-content: space-between;
