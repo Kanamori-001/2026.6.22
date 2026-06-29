@@ -13,6 +13,6 @@ window.addEventListener("scroll", () => {
 pageTopBtn.addEventListener("click",()=>{
   window.scrollTo({
     top:0, 
-    behavior:"smooth"});
+    });
   });
 //ボタンをクリックした際の挙動を設定。"smooth"で挙動を滑らかに
