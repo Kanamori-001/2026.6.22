@@ -1,20 +1,21 @@
 @charset "UTF-8";
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 15px;
   font-size: 20px;
   background-color: rgb(113, 111, 114);
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
-#img001{
+#img001 {
   display: block;
   margin: 0 auto;
   width: 100%;
 }
 
-header{
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,42 +33,47 @@ header{
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: opacity 0.3s, transform 0.3s, z-index 9999;
+  opacity :0;
+  z-index: 9999;
 }
 
-#page-top.hide{
-  opacity:0;
-  pointer-events:none;
-  transform: translateY(30px);
+#page-top.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.0s, filter 1.0s;
+  z-index: 9999;
 }
 
-#page-top.show{
-  opacity:1;
-  pointer-events:auto;
-  transform: translateY(0);
+#page-top.show {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 1.0s, filter 1.0s;
+  z-index: 9999;
 }
 
-#page-top:hover{
+#page-top:hover {
   background-color: rgb(245, 255, 110);
-  color:rgb(100,100,255);
+  color: rgb(100, 100, 255);
 }
+
 .container {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   margin-left: 3%;
   margin-right: 3%;
-  width:94%;
-  gap:5%;
-  
+  width: 94%;
+  gap: 5%;
+
 }
 
-main{
+main {
   align-items: center;
-  width:83%
+  width: 83%
 }
-aside{
-  width:12%;
+
+aside {
+  width: 12%;
   line-height: 2.0;
 }
 
@@ -84,22 +90,22 @@ aside{
   margin-bottom: 20px;
 }
 
-.index{
+.index {
   color: rgb(255, 255, 255);
   margin-bottom: 10px;
 }
 
-#html-css-deco-example{
+#html-css-deco-example {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 15px;
   background-color: rgb(47, 136, 163);
-  color: rgb(0,255,0);
+  color: rgb(0, 255, 0);
   display: flex;
   justify-content: center;
 }
 
-#img002{
+#img002 {
   display: block;
   margin: 0 auto;
   width: 70%;
